@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Picomed</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Connect to Bootstrap CSS -->
+    <link rel="stylesheets"  href="bootstrap.css" media=all>
+    <link rel="stylesheets" href="main.css"> 
+
+    <!-- Connect to Font Awesome CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300,600,800' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+    <!-- Connect to Bootstrap Javascript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  </head>
+
+  <body>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/">
+                  <%= image_tag("butterfly.png", :alt => "logo", :width => "15%") %>
+                  <%= image_tag("picomed_logo.png", :alt => "logo", :width => "60%") %>
+                <span class="hidden-sm">
+                </span>
+              </a>            
+            </li>
+            <li>
+              <a href="/about_us">
+                <span style="color:#33CCCC;font-weight: normal;font-size: 15pt">
+                  About Us
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/contact">
+                <span style="color:#33CCCC;font-weight: normal;font-size: 15pt;vertical-align: bottom;">
+                  Contact
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/investors">
+                <span style="color:#33CCCC;font-weight: normal;font-size: 15pt;vertical-align: bottom;">
+                  Investors
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/careers">
+                <span style="color:#33CCCC;font-weight: normal;font-size: 15pt;vertical-align: bottom;">
+                  Careers
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right hidden-sm">
+            <li><a href="#">
+                <span
+                <i class="fa fa-envelope fa-lg" style="color:#0d2f3f"></i>
+            </a></li>
+            <li><a href="#">
+                <span
+                <i class="fa fa-facebook-official fa-lg" style="color:#0d2f3f"></i>
+            </a></li>
+            <li><a href="#">
+                <i class="fa fa-twitter-square fa-lg" style="color:#0d2f3f"></i>
+            </a></li>  
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="width:100%; margin:0">
+      <%= yield %>
+    </div>
+  
+  </body>
+
+  <footer>
+  <div class="container">
+  <section class="row breath">
+    <div class="col-md-12 footerlinks">
+      <p>&copy; 2016 Picomed. All Rights Reserved.</p>
+    </div>
+  </section>
+  </div>
+  </footer>
+</html>

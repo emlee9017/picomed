@@ -1,0 +1,76 @@
+
+<div id="top" class="masthead" role="main">
+  <div class="container">
+    <h1><br><strong>KEEP GERMS AWAY FROM YOUR KIDS</strong></h1>
+
+    <p align=center>Leave your email address to get notified when picomed launches,<br> and to get exclusive access to new releases and updates.</p>
+
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
+          <form class="form-horizontal" role="form" action="/" id="subscribeForm" method="post">
+            <div class="form-group">
+              <div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
+                <input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
+              </div>
+              <div class="col-md-5 col-sm-4">
+                <button type="submit" class="btn btn-success btn-lg">GET EARLY ACCESS</button>
+              </div>
+            </div>
+          </form>
+          <span id="result" class="alertMsg"></span> </div>
+        </div>
+ 
+        <a href="/#explore" class="scrollto">
+        <h3>HOW IT WORKS?</h3>
+        <p class="scrollto--arrow"><%= image_tag("scroll_down.png", :alt => "link to home") %></p>
+        </a>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="container" id="explore">      
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail"> 
+          <%= image_tag("sofa.png", :alt => "list1") %>
+          <div class="caption">
+            <h3>Real-time Health Information</h3>
+            <p>Protect your kids with CDC-quality data delivered straight to your phone, in easy-to-read images tailored to you and your family</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail"> 
+          <%= image_tag("home.png", :alt => "list2") %>
+          <div class="caption">
+            <h3>Supportive Neighborhood Network</h3>
+            <p>Consult with other local parents about what's getting your kids sick in your community and how to stay safe</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail"> 
+          <%= image_tag("message.png", :alt => "list3") %>
+          <div class="caption">
+            <h3>Access to Medical Professionals </h3>
+            <p>Get fast responses from doctors and nurses without waiting-room time. Make informed decisions about when to see a doctor</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail"> 
+          <%= image_tag("cart.png", :alt => "list4") %>
+          <div class="caption">
+            <h3>Crowd-sourced Recommendations</h3>
+            <p>Advance your kids' health and your career, with recommendations for babysitters and pediatricians at your fingertips when you need them most</p>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+
+
